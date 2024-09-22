@@ -1,0 +1,102 @@
+
+body {
+          font-family: 'Roboto', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f8f8f8;
+      }
+      .container {
+          width: 80%;
+          margin: 0 auto;
+          padding: 20px 0;
+      }
+      .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 0;
+      }
+      .header h1 {
+          font-size: 24px;
+          font-weight: 700;
+          margin: 0;
+      }
+      .header nav a {
+          margin-left: 20px;
+          text-decoration: none;
+          color: #000;
+          font-weight: 500;
+      }
+      .header nav a.highlight {
+          color: #ff4d4d;
+      }
+      .section-title {
+          font-size: 18px;
+          font-weight: 700;
+          margin: 20px 0;
+      }
+      .card-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+      }
+      .card {
+          background-color: #fff;
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          width: calc(33.333% - 20px);
+          box-sizing: border-box;
+      }
+      .card img {
+          width: 100%;
+          height: auto;
+      }
+      .card-content {
+          padding: 15px;
+      }
+      .card-content p {
+          margin: 5px 0;
+      }
+      .card-content .price {
+          font-weight: 700;
+      }
+      .card-content .weight {
+          color: #888;
+      }
+      .card-content .add-button {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          text-align: center;
+          background-color: #f0f0f0;
+          border: none;
+          border-radius: 5px;
+          margin-top: 10px;
+          cursor: pointer;
+      }
+      .footer {
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          padding: 20px 0;
+      }
+      .footer a {
+          color: #00f;
+          text-decoration: none;
+      }
+@media (max-width: 768px) { 
+    .card-container {
+        flex-direction: column; 
+    }
+    .card {
+        width: 100%; 
+        align-items: center;
+    }
+    .container {
+        width: 95%; 
+    }
+    nav { 
+        flex-direction: column; 
+    }
+}
